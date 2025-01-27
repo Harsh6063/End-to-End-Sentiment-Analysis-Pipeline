@@ -43,7 +43,7 @@ This script:
 Loads and preprocesses the dataset
 Vectorizes the text using TF-IDF
 Trains a Naive Bayes classifier
-Saves the trained model to two files (tfidf_vectorizer.pkl) (sentiment_model.pkl)
+Saves the trained model to two files (tfidf_vectorizer.pkl) and  (sentiment_model.pkl)
 
 now for the flask app
 Run the Flask app:
@@ -64,10 +64,10 @@ After training the model on the IMDB dataset, the following metrics were achieve
 - Recall: 0.8283
 - F1 Score: 0.8399
 - Approach Summary
-Preprocessing: The data was cleaned to remove unwanted characters, HTML tags, and punctuation.
-Vectorization: Text data was transformed using TF-IDF.
-Model: A Multinomial Naive Bayes classifier was used for simplicity and speed.
-Deployment: The model was deployed using Flask, enabling a RESTful API for predictions.
+- Preprocessing: The data was cleaned to remove unwanted characters, HTML tags, and punctuation.
+- Vectorization: Text data was transformed using TF-IDF.
+- Model: A Multinomial Naive Bayes classifier was used for simplicity and speed.
+- Deployment: The model was deployed using Flask, enabling a RESTful API for predictions.
 
 
 
