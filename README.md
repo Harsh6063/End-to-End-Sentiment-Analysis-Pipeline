@@ -63,7 +63,7 @@ After training the model on the IMDB dataset, the following metrics were achieve
 - Precision: 0.8519
 - Recall: 0.8283
 - F1 Score: 0.8399
-Approach Summary
+- Approach Summary
 Preprocessing: The data was cleaned to remove unwanted characters, HTML tags, and punctuation.
 Vectorization: Text data was transformed using TF-IDF.
 Model: A Multinomial Naive Bayes classifier was used for simplicity and speed.
