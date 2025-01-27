@@ -23,7 +23,7 @@ This project is a sentiment analysis system built using Flask, Naive Bayes, and 
 pip install -r requirements.txt
 
 
-3.Data Acquisition
+3. Data Acquisition
 The dataset used in this project is the IMDB Reviews Dataset. It was downloaded using the Hugging Face Datasets library:
 
 from datasets import load_dataset
@@ -35,7 +35,7 @@ i.)Lowercasing text
 ii.)Removing HTML tags
 iii.)Optionally removing punctuation
 
-4.Run the training script to train the Naive Bayes model on the IMDB dataset:
+4. Run the training script to train the Naive Bayes model on the IMDB dataset:
 
 python sentimental_analysis.py
 
@@ -54,7 +54,7 @@ To test the /predict endpoint, use the following curl command:
 curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"review_text\": \"This is an amazing movie!\"}"
 response :Positive
 
-5.Model Summary
+5. Model Summary
 The model is based on a Naive Bayes classifier trained using TF-IDF vectorization.
 Key Metrics
 After training the model on the IMDB dataset, the following metrics were achieved on the test set:
