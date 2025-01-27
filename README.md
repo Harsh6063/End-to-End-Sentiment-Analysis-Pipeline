@@ -51,7 +51,9 @@ python app.py
 This starts the server at http://127.0.0.1:5000/.
 
 To test the /predict endpoint, use the following curl command:
-curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"review_text\": \"This is an amazing movie!\"}"
+     ```bash
+    
+    curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"review_text\": \"This is an amazing movie!\"}"
 response :Positive
 
 ### 5. Model Summary
