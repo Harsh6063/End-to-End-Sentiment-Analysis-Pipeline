@@ -31,9 +31,9 @@ from datasets import load_dataset
 dataset = load_dataset("imdb")
 The dataset was split into training and testing datasets. The reviews were cleaned by:
 
-i.)Lowercasing text
-ii.)Removing HTML tags
-iii.)Optionally removing punctuation
+- i.)Lowercasing text
+- ii.)Removing HTML tags
+- iii.)Optionally removing punctuation
 
 ### 4. Run the training script to train the Naive Bayes model on the IMDB dataset:
 
@@ -59,10 +59,10 @@ The model is based on a Naive Bayes classifier trained using TF-IDF vectorizatio
 Key Metrics
 After training the model on the IMDB dataset, the following metrics were achieved on the test set:
 
-Accuracy: 0.8417
-Precision: 0.8519
-Recall: 0.8283
-F1 Score: 0.8399
+- Accuracy: 0.8417
+- Precision: 0.8519
+- Recall: 0.8283
+- F1 Score: 0.8399
 Approach Summary
 Preprocessing: The data was cleaned to remove unwanted characters, HTML tags, and punctuation.
 Vectorization: Text data was transformed using TF-IDF.
