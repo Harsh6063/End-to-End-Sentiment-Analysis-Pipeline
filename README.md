@@ -13,8 +13,7 @@ This project is a sentiment analysis system built using Flask, Naive Bayes, and 
 - Pip (Python package manager)
 
 ### Installation Steps
-1. Clone the repository:
-    ```bash
+### 1. Clone the repository:
     git clone https://github.com/End-to-End-Sentiment-Analysis-Pipeline.git
     cd End-to-End-Sentiment-Analysis-Pipeline.git
 
@@ -27,6 +26,7 @@ The dataset used in this project is the IMDB Reviews Dataset. It was downloaded 
 
     from datasets import load_dataset
     dataset = load_dataset("imdb")
+    
 The dataset was split into training and testing datasets. The reviews were cleaned by:
 
 1. Lowercasing the text.
