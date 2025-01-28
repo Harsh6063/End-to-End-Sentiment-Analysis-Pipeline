@@ -18,13 +18,12 @@ This project is a sentiment analysis system built using Flask, Naive Bayes, and 
     git clone https://github.com/End-to-End-Sentiment-Analysis-Pipeline.git
     cd End-to-End-Sentiment-Analysis-Pipeline.git
 
-### 2 . Install dependencies```bash
+### 2 . Install dependencies
     pip install -r requirements.txt
 
 
  ### 3. Data Acquisition
 The dataset used in this project is the IMDB Reviews Dataset. It was downloaded using the Hugging Face Datasets library:
-    ```bash
 
     from datasets import load_dataset
     dataset = load_dataset("imdb")
@@ -34,7 +33,7 @@ The dataset was split into training and testing datasets. The reviews were clean
 2. Removing HTML tags.
 3. Optionally removing punctuation.
 
-### 4. Run the training script to train the Naive Bayes model on the IMDB dataset:```bash
+### 4. Run the training script to train the Naive Bayes model on the IMDB dataset:
     python sentimental_analysis.py
 
 This script:
@@ -45,10 +44,10 @@ This script:
 
 ### Running the Flask App
 To run the Flask app, execute the following command:
-    ```bash 
     
     python app.py
  This starts the server at: http://127.0.0.1:5000/.
+ 
  To test the /predict endpoint, use the following curl command:
      ```bash
     
