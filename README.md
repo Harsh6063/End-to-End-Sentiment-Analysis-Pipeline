@@ -30,26 +30,26 @@ The dataset used in this project is the IMDB Reviews Dataset. It was downloaded 
     dataset = load_dataset("imdb")
 The dataset was split into training and testing datasets. The reviews were cleaned by:
 
-- i.)Lowercasing text
-- ii.)Removing HTML tags
-- iii.)Optionally removing punctuation
+1. Lowercasing the text.
+2. Removing HTML tags.
+3. Optionally removing punctuation.
 
-### 4. Run the training script to train the Naive Bayes model on the IMDB dataset:
-
-python sentimental_analysis.py
+### 4. Run the training script to train the Naive Bayes model on the IMDB dataset:```bash
+    python sentimental_analysis.py
 
 This script:
-Loads and preprocesses the dataset
-Vectorizes the text using TF-IDF
-Trains a Naive Bayes classifier
-Saves the trained model to two files (tfidf_vectorizer.pkl) and  (sentiment_model.pkl)
+- Loads and preprocesses the dataset.
+- Vectorizes the text using TF-IDF.
+- Trains a Naive Bayes classifier.
+- Saves the trained model to two files: `tfidf_vectorizer.pkl` and `sentiment_model.pkl`.
 
-now for the flask app
-Run the Flask app:
-python app.py
-This starts the server at http://127.0.0.1:5000/.
-
-To test the /predict endpoint, use the following curl command:
+### Running the Flask App
+To run the Flask app, execute the following command:
+    ```bash 
+    
+    python app.py
+ This starts the server at: http://127.0.0.1:5000/.
+ To test the /predict endpoint, use the following curl command:
      ```bash
     
     curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"review_text\": \"This is an amazing movie!\"}"
