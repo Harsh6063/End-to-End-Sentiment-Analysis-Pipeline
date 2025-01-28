@@ -31,7 +31,7 @@ The dataset was split into training and testing datasets. The reviews were clean
 
 1. Lowercasing the text.
 2. Removing HTML tags.
-3. Optionally removing punctuation.
+3. Removing punctuation.
 
 ### 4. Run the training script to train the Naive Bayes model on the IMDB dataset:
     python sentimental_analysis.py
