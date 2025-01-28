@@ -15,20 +15,19 @@ This project is a sentiment analysis system built using Flask, Naive Bayes, and 
 ### Installation Steps
 1. Clone the repository:
     ```bash
-      git clone https://github.com/End-to-End-Sentiment-Analysis-Pipeline.git
-            cd End-to-End-Sentiment-Analysis-Pipeline.git
+    git clone https://github.com/End-to-End-Sentiment-Analysis-Pipeline.git
+    cd End-to-End-Sentiment-Analysis-Pipeline.git
 
 ### 2 . Install dependencies```bash
-        pip install -r requirements.txt
+    pip install -r requirements.txt
 
 
  ### 3. Data Acquisition
 The dataset used in this project is the IMDB Reviews Dataset. It was downloaded using the Hugging Face Datasets library:
     ```bash
 
-      from datasets import load_dataset
-
-     dataset = load_dataset("imdb")
+    from datasets import load_dataset
+    dataset = load_dataset("imdb")
 The dataset was split into training and testing datasets. The reviews were cleaned by:
 
 - i.)Lowercasing text
@@ -54,22 +53,32 @@ To test the /predict endpoint, use the following curl command:
      ```bash
     
     curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"review_text\": \"This is an amazing movie!\"}"
-response :Positive
 
 ### 5. Model Summary
-The model is based on a Naive Bayes classifier trained using TF-IDF vectorization.
-Key Metrics
+
+The model is based on a **Naive Bayes classifier** trained using **TF-IDF vectorization**.
+
+#### Key Metrics
 After training the model on the IMDB dataset, the following metrics were achieved on the test set:
 
-- Accuracy: 0.8417
-- Precision: 0.8519
-- Recall: 0.8283
-- F1 Score: 0.8399
-- Approach Summary
-- Preprocessing: The data was cleaned to remove unwanted characters, HTML tags, and punctuation.
-- Vectorization: Text data was transformed using TF-IDF.
-- Model: A Multinomial Naive Bayes classifier was used for simplicity and speed.
-- Deployment: The model was deployed using Flask, enabling a RESTful API for predictions.
+- **Accuracy**: 0.8417
+- **Precision**: 0.8519
+- **Recall**: 0.8283
+- **F1 Score**: 0.8399
+
+#### Approach Summary
+```plaintext
+1. Preprocessing:
+   - The data was cleaned to remove unwanted characters, HTML tags, and punctuation.
+
+2. Vectorization:
+   - Text data was transformed into numerical features using TF-IDF.
+
+3. Model:
+   - A Multinomial Naive Bayes classifier was chosen for its simplicity and speed.
+
+4. Deployment:
+   - The model was deployed using Flask, providing a RESTful API for predictions.
 
 
 
