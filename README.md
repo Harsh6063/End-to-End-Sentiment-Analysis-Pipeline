@@ -49,7 +49,6 @@ To run the Flask app, execute the following command:
  This starts the server at: http://127.0.0.1:5000/.
  
  To test the /predict endpoint, use the following curl command:
-     ```bash
     
     curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"review_text\": \"This is an amazing movie!\"}"
 
