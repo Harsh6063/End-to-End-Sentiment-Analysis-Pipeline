@@ -67,7 +67,6 @@ After training the model on the IMDB dataset, the following metrics were achieve
 - **F1 Score**: 0.8399
 
 #### Approach Summary
-```plaintext
 1. Preprocessing:
    - The data was cleaned to remove unwanted characters, HTML tags, and punctuation.
 
