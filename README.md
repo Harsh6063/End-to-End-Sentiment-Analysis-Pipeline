@@ -14,7 +14,7 @@ This project is a sentiment analysis system built using Flask, Naive Bayes, and 
 
 ### Installation Steps
 ### 1. Clone the repository:
-    git clone https://github.com/End-to-End-Sentiment-Analysis-Pipeline.git
+    git clone https://github.com/Harsh6063/End-to-End-Sentiment-Analysis-Pipeline.git
     cd End-to-End-Sentiment-Analysis-Pipeline.git
 
 ### 2 . Install dependencies
